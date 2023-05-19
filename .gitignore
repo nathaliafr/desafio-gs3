@@ -1,0 +1,22 @@
+# Arquivos de build e dependências
+node_modules/
+platforms/
+plugins/
+
+# Arquivos gerados durante a compilação
+www/build/
+www/cordova/
+
+# Arquivos específicos para editores de código
+.vscode/
+.idea/
+
+# Arquivos de configuração de ambiente
+*.env
+.env.local
+.env.production
+.env.staging
+
+# Logs
+logs/
+*.log
