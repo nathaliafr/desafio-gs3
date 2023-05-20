@@ -12,8 +12,8 @@ const routes: Routes = [
         loadChildren: () => import('../photoGallery/photoGallery.module').then(m => m.PhotoGalleryPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'mapa',
+        loadChildren: () => import('../mapLocation/mapLocation.module').then(m => m.MapLocationPageModule)
       },
       {
         path: 'tab3',
