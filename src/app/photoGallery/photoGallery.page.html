@@ -11,13 +11,14 @@
 
 <ion-content [fullscreen]="true">
  
-
   <ion-content>
-    <ion-button expand="full"  >Tirar Foto</ion-button>
-    <ion-button expand="full"  >Escolher Foto</ion-button>
+     <ion-button expand="full" (click)="choosePhoto()">Escolher Foto</ion-button>
   
     <ion-list>
-      <ion-item  >
-       </ion-item>
+      <ion-item *ngFor="let photo of photos; let i = index">
+        <img [src]="photo" alt="Foto" width="100">
+        <ion-button slot="end" (click)="deletePhoto(i)">Excluir</ion-button>
+
+      </ion-item>
     </ion-list>
   </ion-content></ion-content>
