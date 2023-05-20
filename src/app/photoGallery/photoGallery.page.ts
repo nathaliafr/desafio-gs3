@@ -1,8 +1,6 @@
 import { Component } from '@angular/core'; 
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 
-
-
 @Component({
   selector: 'app-photo-gallery',
   templateUrl: 'photoGallery.page.html',

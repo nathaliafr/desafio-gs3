@@ -29,9 +29,6 @@ export class MapLocationPage {
     this.loadMap();
   }
 
-  ngAfterViewInit() {
-    this.loadMap();
-  }
   loadMap() {
 
    const customIcon: Icon = icon({

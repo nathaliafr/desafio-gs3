@@ -3,6 +3,7 @@ node_modules/
 platforms/
 plugins/
 .angular/
+coverage/
  
 # Arquivos gerados durante a compilação
 www/  

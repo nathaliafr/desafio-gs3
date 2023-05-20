@@ -15,10 +15,7 @@ const routes: Routes = [
         path: 'mapa',
         loadChildren: () => import('../mapLocation/mapLocation.module').then(m => m.MapLocationPageModule)
       },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      },
+
       {
         path: '',
         redirectTo: '/tabs/galeria',

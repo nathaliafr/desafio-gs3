@@ -1,22 +1,22 @@
+import { GeolocationPosition } from '@capacitor/geolocation';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { MapLocationPage } from './mapLocation.page';
 
-describe('Tab2Page', () => {
+describe('MapLocationPage', () => {
   let component: MapLocationPage;
   let fixture: ComponentFixture<MapLocationPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MapLocationPage],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
+      imports: [IonicModule.forRoot()]
     }).compileComponents();
 
     fixture = TestBed.createComponent(MapLocationPage);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance; 
     fixture.detectChanges();
   });
 
