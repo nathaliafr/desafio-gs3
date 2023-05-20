@@ -8,7 +8,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'galeria',
         loadChildren: () => import('../photoGallery/photoGallery.module').then(m => m.PhotoGalleryPageModule)
       },
       {
@@ -21,14 +21,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/galeria',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/galeria',
     pathMatch: 'full'
   }
 ];
